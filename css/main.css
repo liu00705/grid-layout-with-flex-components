@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+  }
+  
+.emojis {
+    display: grid;
+    grid-template-areas: 
+    "smiling-eyes beer-mugs"
+    "laughing seedling";
+
+    max-width: 1000px;
+    gap: 1rem;
+    
+    
+}
+
+.emojis div:nth-child(1) {
+    grid-area: smiling-eyes;
+}
+
+.emojis div:nth-child(2) {
+    grid-area: beer-mugs;
+}
+
+.emojis div:nth-child(3) {
+    grid-area: laughing;
+}
+
+.emojis div:nth-child(4) {
+    grid-area: seedling;
+}
+  
+.emoji {
+    
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1rem;
+    box-sizing: border-box;
+    height: 330px;
+    
+  }
+  
+.emoji h2 {
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+  }
+  
+.emoji a {
+    text-decoration: none;
+    background-color: #781BAA;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: auto;
+  }
+  
+.icon {
+    order: -1;
+    font-size: 4rem;
+    align-self: center;
+  }
