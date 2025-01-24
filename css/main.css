@@ -32,9 +32,10 @@ body {
 }
   
 .emoji {
-    
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
     border: 1.5px solid #222;
     border-radius: 8px;
     padding: 1rem;
@@ -42,6 +43,10 @@ body {
     height: 330px;
     
   }
+
+.emoji p {
+  flex-grow: 1;
+}
   
 .emoji h2 {
     margin: 0;
@@ -49,12 +54,13 @@ body {
   }
   
 .emoji a {
+    display: flex;
     text-decoration: none;
     background-color: #781BAA;
     color: white;
     padding: 1rem;
     border-radius: 8px;
-    margin-top: auto;
+    /* margin-top: auto; */
   }
   
 .icon {
